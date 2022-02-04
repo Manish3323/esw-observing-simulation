@@ -49,7 +49,7 @@ jobs:
 
       - name: Integration - Tests 
         working-directory: integration
-        run: sbt -DenableFatalWarnings=true "test:test; packagedArtifacts"
+        run: sbt -DenableFatalWarnings=true -DgenerateStoryReport=true "test:test; packagedArtifacts"
 
       - name: Integration- Generate RTM 
         working-directory: integration
