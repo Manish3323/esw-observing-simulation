@@ -126,7 +126,7 @@ jobs:
       - name: Create release & Upload artifacts
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "tmp/release-artifacts/*"
+          artifacts: "/tmp/release-artifacts/*"
           bodyFile: "notes/v0.1.0-RC1.markdown"
           token: ${{ secrets.GITHUB_TOKEN }}
 

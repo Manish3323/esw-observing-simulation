@@ -26,7 +26,7 @@ zip /tmp/release-artifacts/wfos-scoverage-report.zip wfos/target/scala-2.13/scov
 
 # Find all xml files in all target folders & create wfos-test-reports.zip
 mkdir /tmp/wfos-test-reports
-find wfos -name "TEST-*.xml" -exec cp -p "{}" /tmp/wfostest-reports/ \;
+find wfos -name "TEST-*.xml" -exec cp -p "{}" /tmp/wfos-test-reports/ \;
 zip /tmp/release-artifacts/wfos-test-reports.zip /tmp/wfos-test-reports/*
 # wfos-test-reports.html
 junit-merge -d /tmp/wfos-test-reports -o /tmp/wfos-test-report.xml
